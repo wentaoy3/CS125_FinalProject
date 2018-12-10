@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/even"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Even"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/dollar30"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <Button
+        android:id="@+id/dollar50"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="$50"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/dollar30"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <Button
+        android:id="@+id/dollar30"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="$30"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <Button
+        android:id="@+id/dollar10"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="$10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/dollar30"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <TextView
+        android:id="@+id/betType"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="What do you want to bet?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/die2_0" />
+
+    <Button
+        android:id="@+id/odd"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:text="Odd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/dollar30"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="You win!!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/die2_0" />
+
+    <ImageView
+        android:id="@+id/die2_0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/perspective_dice_six_faces_random"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/lose"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="You lose!!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/die2_0" />
+
+    <ImageView
+        android:id="@+id/die3_0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/die2_0"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/perspective_dice_six_faces_random"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <ImageView
+        android:id="@+id/die2_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_six"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/die3_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_6"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_six"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/die2_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_five"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageView
+        android:id="@+id/die3_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_5"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_five"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageView
+        android:id="@+id/die2_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_four" />
+
+    <ImageView
+        android:id="@+id/die3_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_4"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_four" />/>
+
+    <ImageView
+        android:id="@+id/die1_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_3"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_three" />
+
+    <ImageView
+        android:id="@+id/die3_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_3"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_three" />
+
+    <ImageView
+        android:id="@+id/die2_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_one" />
+
+    <ImageView
+        android:id="@+id/die3_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_1"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_one" />
+
+    <ImageView
+        android:id="@+id/die1_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_1"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_one" />
+
+    <ImageView
+        android:id="@+id/die1_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_2"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_two" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="420dp"
+        android:text="Start the game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/die2_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_two" />
+
+    <ImageView
+        android:id="@+id/die3_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/die2_1"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_two" />
+
+    <ImageView
+        android:id="@+id/die2_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_three" />
+
+    <ImageView
+        android:id="@+id/die1_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_4"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_four" />
+
+    <ImageView
+        android:id="@+id/die1_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_5"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_five"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageView
+        android:id="@+id/die1_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_6"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/dice_six_faces_six"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/die1_0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/die2_0"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:srcCompat="@drawable/perspective_dice_six_faces_random"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <TextView
+        android:id="@+id/bet"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="How much do you want to bet?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/die2_0" />
+
+    <Button
+        android:id="@+id/triple"
+        android:layout_width="82dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="Triple"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betType" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Balance: $"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/odd" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="RESET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dollar50" />
+
+    <TextView
+        android:id="@+id/gold"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="121dp"
+        android:text="100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/balance"
+        app:layout_constraintTop_toBottomOf="@+id/dollar30" />
+
+    <TextView
+        android:id="@+id/gg"
+        android:layout_width="313dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="GAME OVER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bet"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Best Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="98dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintStart_toEndOf="@+id/best"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ALL IN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triple"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
